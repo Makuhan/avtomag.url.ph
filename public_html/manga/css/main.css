@@ -1,0 +1,62 @@
+/* add your css Here */
+html
+{
+	/*width:1000px;*/
+ 	background-color:red;
+	/*background-image:url("../images/nulp.jpg");*/
+}
+body
+{  
+    /*height:100px;*/
+	width:700px;
+	margin:10px auto;
+  	background-color:grey;
+   border-radius:5px;
+}
+#tit{
+  width:100%;
+  text-align:center;
+  /*margin:10px 0px;*/
+}
+
+h1{
+	margin:10px auto;
+}
+.leftcol{
+  float:left;
+	background-color:blue;
+  	width:48%;
+  height:20px; 
+   /*margin:10px 0px;*/
+  margin:10px 0px;
+  /*padding:0px -10px;
+  position: left;*/
+}
+
+.rightcol{
+  float:left;
+	background-color:white;
+  	width:45%;
+  height:20px;
+  margin:10px 0px 10px 4% ;
+ /* padding-left:3%;
+  padding-right:1%;*/
+
+ /* position: relative;*/
+}
+#coclums{
+border-style: double;
+  border-radius:5px;
+  padding:0px 2%;
+}
+.bord{
+border-style:none none dashed none;
+  margin:0px -2%;
+}
+.dnBt{
+    width:100%;
+	margin: 10px auto; 
+    /*background-color:yellow;
+    padding: 0px auto;*/
+  text-align:center;
+}

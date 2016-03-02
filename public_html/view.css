@@ -1,0 +1,37 @@
+/* add your css Here */
+html{
+background-color:white;
+}
+
+body{
+	width:700px;
+  	background-color:red;
+ 	height:500px;
+ 	margin: 10px auto;
+}
+
+.header{
+background-color:yellow;
+  height:50px;
+}
+.choser{
+text-align:right;
+  padding-right:20px;
+}
+.imag{
+	margin: 10px auto;
+  text-align:center;
+}
+.butlr{
+text-align:right;
+  padding-right:20px;
+}
+
+.clr{
+clear:both;
+}
+
+.footr{
+background-color:yellow;
+  height:50px;
+}

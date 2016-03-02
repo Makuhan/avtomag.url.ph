@@ -1,0 +1,70 @@
+<!-- Add your HTML Here  -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>View</title>
+  <?php
+// Соединяемся, выбираем базу данных
+$link = mysql_connect('mysql.hostinger.com.ua', 'u450252009_admin', 'QdMWc5XJGfPg')
+    or die('Не удалось соединиться: ' . mysql_error());
+echo 'Соединение успешно установлено';
+mysql_select_db('u450252009_autom') or die('Не удалось выбрать базу данных');
+
+// Выполняем SQL-запрос
+$query = 'SELECT * FROM my_table';
+$result = mysql_query($query) or die('Запрос не удался: ' . mysql_error());
+
+// Выводим результаты в html
+echo "<table>\n";
+while ($line = mysql_fetch_array($result, MYSQL_ASSOC)) {
+    echo "\t<tr>\n";
+    foreach ($line as $col_value) {
+        echo "\t\t<td>$col_value</td>\n";
+    }
+    echo "\t</tr>\n";
+}
+echo "</table>\n";
+
+// Освобождаем память от результата
+mysql_free_result($result);
+
+// Закрываем соединение
+mysql_close($link);
+?>
+</head>
+
+<body>
+<div class="header">Site  </div>
+  <div class="clr"></div>
+  <div class="choser" >
+    <select>
+ 		 <option value="volvo">Volvo</option>
+  		<option value="saab">Saab</option>
+ 		 <option value="opel">Opel</option>
+ 		 <option value="audi">Audi</option>
+	</select>
+     <select>
+ 		 <option value="volvo">Volvo</option>
+  		<option value="saab">Saab</option>
+ 		 <option value="opel">Opel</option>
+ 		 <option value="audi">Audi</option>
+	</select>
+  </div>
+  <div class="clr"></div>
+ 
+  <div class="imag"><img src="" alt="Image" style="width:70%;"> </div>
+
+  <div class="clr"></div>
+  
+  <div class="butlr"> 
+    <button><</button> 
+    <button>></button> </div>
+  
+  <div class="footr"> 
+    <p>    Help    </p>
+  </div>
+  
+</body>
+
+</html>
