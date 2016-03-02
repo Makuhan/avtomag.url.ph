@@ -24,7 +24,7 @@
 		</select>
 		
 		</form>
-		<button style=" background-color:white;height:100%;width:100%;">dfgdfdffd</button>
+		<button style=" background-color:white;height:100%;width:100%;">Назад</button>
 		</div>
 		<div style="float:right; width:15%; background-color:white;height:100%;";>
 		<form name="form2"  action="#" method="get">
@@ -42,7 +42,7 @@
 		</select>
 		
 		</form>
-		<button style=" background-color:white;height:100%;width:100%;">dfgdfdffd</button>
+		<button style=" background-color:white;height:100%;width:100%;">Вперед</button>
 		</div>
 		<div style="margin:10px auto; width:70%";>
 		<?php 
