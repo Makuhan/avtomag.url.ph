@@ -71,7 +71,7 @@ where db_manga.id='.$id;
 
 $query = 'SELECT db_manga.id, db_manga.name, db_chapter.N_chapter,db_page.N_page, db_page.path FROM db_manga 
 left join db_chapter on db_manga.id=db_chapter.id_manga
-    left join db_page on db_chapter.id=db_page.id_chapter
+    right join db_page on db_chapter.id=db_page.id_chapter
      WHERE db_manga.id='.$id;
 
 $result = $conn->query($query);
