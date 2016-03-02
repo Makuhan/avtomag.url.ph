@@ -69,6 +69,11 @@ RIGHT JOIN manga.db_PAGE ON db_chapter.id=db_page.id_chapter
 where db_manga.id='.$id;
 //$result = mysql_query($query) or die('Запрос не удался: ' . mysql_error());
 
+$query = 'SELECT db_manga.id, db_manga.name, db_chapter.N_chapter,db_page.N_page, db_page.path FROM db_manga 
+left join db_chapter on db_manga.id=db_chapter.id_manga
+    left join db_page on db_chapter.id=db_page.id_chapter
+     WHERE db_manga.id='.$id;
+
 $result = $conn->query($query);
 
 $data_chapt=array();
