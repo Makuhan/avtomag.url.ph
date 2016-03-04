@@ -1,0 +1,24 @@
+{
+    "name" : "Test site",
+    "type" : "site",
+    "description": "site",
+    "keywords": ["avtomag", "manga"],
+    "homepage": "https://github.com/Karplyak/avtomag.url.ph.git ",
+    "license": "MIT",
+    "authors": [{
+        "name": "Karplyak",
+        "email": "warior201@gmail.com",
+        "homepage": "",
+        "role": "Developer"
+    }],
+    "require" : {
+        "php" : ">=5.3"
+    },
+    "require-dev": {
+        "10up/wp_mock": "dev-master",
+        "phpunit/phpunit": "~4.5",
+        "mockery/mockery": "0.9.*",
+        "codeclimate/php-test-reporter": "0.1.*",
+        "squizlabs/php_codesniffer": "~2.3"
+    }
+}
