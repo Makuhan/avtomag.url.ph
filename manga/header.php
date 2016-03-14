@@ -30,24 +30,24 @@
 				 
 				 	<?php
 
-/*if (isset($_GET['id']) {
+if (isset($_GET['id']) {
 	$id= $_GET['id'];
 }
-else {*/
+else {
 	$id = 1;
-/*}
+}
 if (isset($_GET["page"]) {
 	$page=$_GET["page"];
 }
 else {*/
 	$page = 1;
-/*}
+}
 if (isset($_GET["chapter"]) {
 	$chapter=$_GET["chapter"];
 }
 else {*/
 	$chapter = 1;
-//}
+}
 					
 // Соединяемся, выбираем базу данных
 /*$link = mysql_connect('localhost', 'root', '')
@@ -66,7 +66,7 @@ if ($conn->connect_error) {
 $query = 'SELECT db_manga.id, db_manga.name, db_chapter.N_chapter,db_page.N_page, db_page.path
 FROM db_manga LEFT JOIN manga.db_chapter ON db_manga.id=db_chapter.id_manga 
 RIGHT JOIN manga.db_PAGE ON db_chapter.id=db_page.id_chapter
-where db_manga.id='.$id;
+where db_manga.id='.$id.'order by db_page.N_page';
 //$result = mysql_query($query) or die('Запрос не удался: ' . mysql_error());
 
 $query = 'SELECT db_manga.id, db_manga.name, db_chapter.N_chapter,db_page.N_page, db_page.path FROM db_manga 
