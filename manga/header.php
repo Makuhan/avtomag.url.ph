@@ -40,14 +40,14 @@ if (isset($_GET["page"]) {
 	$page=$_GET["page"];
 }
 else {*/
-	$page = 1;/*
-}
+	$page = 1;
+//}
 if (isset($_GET["chapter"]) {
 	$chapter=$_GET["chapter"];
 }
-else {*/
+else {
 	$chapter = 1;
-//}
+}
 					
 // Соединяемся, выбираем базу данных
 /*$link = mysql_connect('localhost', 'root', '')
