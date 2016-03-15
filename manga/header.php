@@ -39,13 +39,13 @@ else {
 if (isset($_GET["page"]) {
 	$page=$_GET["page"];
 }
-else {*/
+else {
 	$page = 1;
 }
 if (isset($_GET["chapter"]) {
 	$chapter=$_GET["chapter"];
 }
-else {*/
+else {
 	$chapter = 1;
 }
 					
