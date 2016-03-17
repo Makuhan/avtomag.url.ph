@@ -40,10 +40,10 @@
 				endforeach; //https://www.youtube.com/watch?v=rSncrXP0HeU ?>
  
 		</select>
-		
+		</div><!-- -->
 		</form>
 		<button style=" background-color:white;height:100%;width:100%;">Вперед</button>
-		</div>
+		
 		<div style="margin:10px auto; width:70%";>
 		<?php 
 		
