@@ -23,11 +23,11 @@
 				endforeach; //https://www.youtube.com/watch?v=rSncrXP0HeU ?>
 		</select>
 		
-		</form>
+		<!--</form>-->
 		<button style=" background-color:white;height:100%;width:100%;">Назад</button>
 		</div>
 		<div style="float:right; width:15%; background-color:white;height:100%;";>
-		<form name="form2"  action="#" method="get">
+		<!--<form name="form2"  action="#" method="get"> -->
 		<select name="page" style="float:right; width:100%;" onChange="form2.submit()">
 				<?php foreach($data_page as $opt=>$opt_value): 
 				if($opt==$_GET["page"]){
