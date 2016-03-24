@@ -8,10 +8,10 @@
 		<!-- section -->
 		<section style="background-color:white;">
 		
-		<div style="float:left; width:15%; background-color:white;height:100%;";>
+		
 		
 		<form name="form1"  action="#" method="get">
-		  		
+		  	<div style="float:left; width:15%; background-color:white;height:100%;";>
 		<select onChange="form1.submit()" name="chapter" style="width:100%;">
 				<?php foreach($data_chapt as $opt): 
 					if($opt==$_GET["chapter"]){
@@ -40,9 +40,10 @@
 				endforeach; //https://www.youtube.com/watch?v=rSncrXP0HeU ?>
  
 		</select>
+		<button style=" background-color:white;height:100%;width:100%;">Вперед</button>
+		
 		</div><!-- -->
 		</form>
-		<button style=" background-color:white;height:100%;width:100%;">Вперед</button>
 		
 		<div style="margin:10px auto; width:70%";>
 		<?php 
