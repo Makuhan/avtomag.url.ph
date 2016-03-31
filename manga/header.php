@@ -16,8 +16,9 @@
 			//functions
 			function gonext() {
 										
-				
-		echo "<script>window.location = 'http://avtomag.url.ph/manga/?chapter=".$_GET["chapter"]."&page=".$_GET["page"]++."#'</script>";
+				$test=$_GET["page"];
+				$test++;
+		echo "<script>window.location = 'http://avtomag.url.ph/manga/?chapter=".$_GET["chapter"]."&page=".$test."#'</script>";
 			}
 			
 			
