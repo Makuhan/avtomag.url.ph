@@ -12,6 +12,19 @@
 		
 			<!-- header -->
 			<header>
+			<?php
+			//functions
+			function gonext() {
+										
+				
+		echo "<script>window.location = 'http://avtomag.url.ph/manga/?chapter=".$_GET["chapter"]."&page=".$_GET["page"]++."#'</script>";
+			}
+			
+			
+			?>
+			
+			
+			
                 <div class="main">
                     <div class="wrapper">
                         <h1><a href="http://avtomag.url.ph">logo</a></h1>
