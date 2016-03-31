@@ -40,7 +40,7 @@
 				endforeach; //https://www.youtube.com/watch?v=rSncrXP0HeU ?>
  
 		</select>
-		<button style=" background-color:white;height:100%;width:100%;" Onclick="<?php onext(); ?>">Вперед</button>
+		<button style=" background-color:white;height:100%;width:100%;" Onclick="<?php gonext(); ?>">Вперед</button>
 		
 		</div><!-- -->
 		</form>
