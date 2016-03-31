@@ -28,7 +28,7 @@
 		</div>
 		<div style="float:right; width:15%; background-color:white;height:100%;";>
 		<!--<form name="form2"  action="#" method="get"> -->
-		<select name="page" style="float:right; width:100%;" onChange="form.submit()">
+		<select name="page" style="float:right; width:100%;" onChange="form1.submit()">
 				<?php foreach($data_page as $opt=>$opt_value): 
 				if($opt==$_GET["page"]){
 			echo '<option selected value="' . $opt. '">page '.$opt; '</option>'; 
