@@ -42,7 +42,7 @@ if (isset($_GET["page"]) {
 else {*/
 	$page = 1;
 //}
-if (isset($_GET["chapter"]) {
+if (isset($_GET["chapter"])) {
 	$chapter=$_GET["chapter"];
 }
 else {
