@@ -18,7 +18,7 @@
 										
 				$test=$_GET["page"];
 				$test=$test+1;
-		echo "<script>window.location = 'http://avtomag.url.ph/manga/?chapter=".$_GET["chapter"]."&page=".$test."#'</script>";
+		echo "<script>window.location = 'http://avtomag.url.ph/manga/?chapter=".$_GET['chapter']."&page=".$test."#'</script>";
 			}
 			
 			
