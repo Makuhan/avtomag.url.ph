@@ -15,11 +15,16 @@ var height = img.clientHeight;
 alert(img.width + 'x' + img.height);
 
 var div = document.getElementById("imgdiv");
+//<div style="z-index:2;position:absolute;">Текст</div>
+var ldiv =document.createElement("DIV");
+ldiv.setAttribute("style","position: absolute; left: "+text[0][1]+"px; top: "+text[0][2]+"px; width:"+text[0][3]+"px;height:"+text[0][4]+"px;");
+div.appendChild(ldiv);
+
 var label =document.createElement("LABEL");
 label.setAttribute("for","image");
-label.setAttribute("style","position: absolute; left: "+text[0][1]+"px; top: "+text[0][2]+"px;");
+
 label.innerHTML = text[0][0];
-div.appendChild(label);
+ldiv.appendChild(label);
 }
 
 </script>
@@ -66,7 +71,7 @@ div.appendChild(label);
 		</div><!-- -->
 		</form>
 		
-		<div style="margin:10px auto; width:70%"; id="imgdiv">
+		<div style="margin:10px auto; width:70%; position:relative";id="imgdiv"  >
 		<?php 
 		
 		 
