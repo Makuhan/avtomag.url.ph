@@ -17,6 +17,7 @@ alert(img.width + 'x' + img.height);
 var div = document.getElementById("imgdiv");
 var label =document.createElement("LABEL");
 label.setAttribute("for","image");
+label.setAttribute("style","position: absolute; left: "+text[0][1]+"px; top: "+text[0][2]+"px;");
 label.innerHTML = text[0][0];
 div.appendChild(label);
 }
@@ -72,10 +73,10 @@ div.appendChild(label);
 
 		
 		if(array_key_exists($_GET["page"], $data_page)){
-			echo '<img src="'.$data_page[$_GET["page"]].'" style=" width:100%;" alt="image" id="image" />'; 
+			echo '<img src="'.$data_page[$_GET["page"]].'" style=" width:100%;position: relative;" alt="image" id="image" />'; 
 		} else {
 			if(!isset($_GET["page"])){
-			echo '<img src="'.$data_page[1].'" style=" width:100%;" alt="image" id="image" />'; 
+			echo '<img src="'.$data_page[1].'" style=" width:100%;position: relative;" alt="image" id="image" />'; 
 		} else{
 			echo 'no images';}
 		}
