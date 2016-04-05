@@ -16,8 +16,9 @@ alert(img.width + 'x' + img.height);
 
 var div = document.getElementById("imgdiv");
 //<div style="z-index:2;position:absolute;">Текст</div>
-var ldiv =document.createElement("DIV");
+var ldiv =document.createElement('div');
 ldiv.setAttribute("style","position: absolute; left: "+text[0][1]+"px; top: "+text[0][2]+"px; width:"+text[0][3]+"px;height:"+text[0][4]+"px;");
+ldiv.innerHTML = "<label>Ура!</strong> Вы прочитали это важное сообщение.";
 div.appendChild(ldiv);
 
 var label =document.createElement("LABEL");
