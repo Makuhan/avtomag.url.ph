@@ -14,9 +14,11 @@ var width = img.clientWidth;
 var height = img.clientHeight;
 alert(img.width + 'x' + img.height);
 
+var div = document.getElementById("imgdiv");
 var label =document.createElement("LABEL");
 label.setAttribute("for","image");
 label.innerHTML = text[0][0];
+div.appendChild(label);
 }
 
 </script>
@@ -63,7 +65,7 @@ label.innerHTML = text[0][0];
 		</div><!-- -->
 		</form>
 		
-		<div style="margin:10px auto; width:70%";>
+		<div style="margin:10px auto; width:70%"; id="imgdiv">
 		<?php 
 		
 		 
