@@ -1,7 +1,25 @@
 <!DOCTYPE html>
 
 <?php include 'header.php'; ?>
+<script>
+function functionName() {
+var text = [
+   //[text, x, y, w, h]
+     ["ЕПОХА ВІЙН",30,129,230,120]
+    ,["text2",10,10,50,50]
+	,["text3",10,10,50,50]
+];
+var img = document.getElementById("image"); //get x and y
+var width = img.clientWidth;
+var height = img.clientHeight;
+alert(img.width + 'x' + img.height);
 
+var label =document.createElement("LABEL");
+label.setAttribute("for","image");
+label.innerHTML = text[0][0];
+}
+
+</script>
 	<main role="main">
 
 <div class="main">
@@ -24,7 +42,7 @@
 		</select>
 		
 		<!--</form>-->
-		<button style=" background-color:white;height:100%;width:100%;">Назад</button>
+		<button style=" background-color:white;height:100%;width:100%;" onclick="functionName();">Назад</button>
 		</div>
 		<div style="float:right; width:15%; background-color:white;height:100%;";>
 		<!--<form name="form2"  action="#" method="get"> -->
@@ -52,10 +70,10 @@
 
 		
 		if(array_key_exists($_GET["page"], $data_page)){
-			echo '<img src="'.$data_page[$_GET["page"]].'" style=" width:100%;" alt="image" />'; 
+			echo '<img src="'.$data_page[$_GET["page"]].'" style=" width:100%;" alt="image" id="image" />'; 
 		} else {
 			if(!isset($_GET["page"])){
-			echo '<img src="'.$data_page[1].'" style=" width:100%;" alt="image" />'; 
+			echo '<img src="'.$data_page[1].'" style=" width:100%;" alt="image" id="image" />'; 
 		} else{
 			echo 'no images';}
 		}
