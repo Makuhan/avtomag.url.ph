@@ -5,26 +5,30 @@
 function functionName() {
 var text = [
    //[text, x, y, w, h]
-     ["ЕПОХА ВІЙН",30,129,230,120]
+     ["ЕПОХА ВІЙН",31,129,230,120]
     ,["text2",10,10,50,50]
 	,["text3",10,10,50,50]
 ];
 var img = document.getElementById("image"); //get x and y
 var width = img.clientWidth;
 var height = img.clientHeight;
-alert(img.width + 'x' + img.height);
+var nwidth = img.naturalWidth;
+var nheight = img.naturalHeight;
+var ch = parseFloat(img.height/nheight).toPrecision(2);
+var cw = parseFloat(img.width/nwidth).toPrecision(2);
+alert(img.width + 'x' + img.height +' c width'+cw+'c height'+ch);
 
 var div = document.getElementById("imgdiv");
 //<div style="z-index:2;position:absolute;">Текст</div>
 var newdiv =document.createElement('div');
-newdiv.setAttribute("style","position: absolute; left: "+text[0][1]+"px; top: "+text[0][2]+"px; width:"+text[0][3]+"px;height:"+text[0][4]+"px;");
-newdiv.innerHTML = "<label>Ура!</strong> Вы прочитали это важное сообщение.";
+//newdiv.setAttribute("style","position: absolute; left: "+text[0][1]*0.7+"px; top: "+text[0][2]*0.7+"px; width:"+text[0][3]+"px;height:"+text[0][4]+"px; background-color:white; ");
+//newdiv.innerHTML = "<label>Ура!</strong> Вы прочитали это важное сообщение.";
 
 
 var label =document.createElement("LABEL");
 label.setAttribute("for","image");
-
-label.value = text[0][0];
+label.setAttribute("style","position: absolute; left: "+text[0][1]*cw+"px; top: "+text[0][2]*ch+"px; width:"+text[0][3]*cw+"px;height:"+text[0][4]*ch+"px; background-color:white; ");
+label.innerHTML = text[0][0];
 newdiv.appendChild(label);
 div.appendChild(newdiv);
 }
@@ -73,7 +77,7 @@ div.appendChild(newdiv);
 		</div><!-- -->
 		</form>
 		
-		<div style="margin:10px auto; width:70%; position:relative";id="imgdiv"  >
+		<div style="margin:10px auto; width:70%; position:relative;" id="imgdiv"  >
 		<?php 
 		
 		 
